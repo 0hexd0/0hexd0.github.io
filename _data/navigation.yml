@@ -1,0 +1,5 @@
+- name: 博客
+  link: /index.html
+
+- name: 关于
+  link: /about.html
