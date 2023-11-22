@@ -16,11 +16,11 @@ title: Home
 <nav aria-label="Page navigation example">
     <ul class="pagination">
         <li class="page-item">
-            <a class="page-link" {% if paginator.previous_page %} class="disabled" {% endif %}
+            <a class="page-link  {% if paginator.previous_page == nil %} disabled {% endif %}"
                 href="{{ paginator.previous_page_path | relative_url }}">上一页</a>
         </li>
         {% for page in (1..paginator.total_pages) %}
-        <li class="page-item active">
+        <li class="page-item    {% if paginator.page == page %} active {% endif %}">
             {% if page == 1 %}
             <a class="page-link" href="{{ '/' | relative_url }}">{{ page }}</a>
             {% else %}
@@ -29,7 +29,7 @@ title: Home
         </li>
         {% endfor %}
         <li class="page-item">
-            <a class="page-link" {% if paginator.next_page_path %} class="disabled" {% endif %}
+            <a class="page-link {% if paginator.next_page_path == nil %} disabled {% endif %}"
                 href="{{ paginator.next_page_path | relative_url }}">下一页</a>
         </li>
     </ul>
