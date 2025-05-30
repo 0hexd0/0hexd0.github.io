@@ -5,7 +5,7 @@ date:   2023-11-21
 categories: algorithms
 ---
 
-{% highlight java %}
+``` java
 import edu.princeton.cs.algs4.Stack;
 
 import java.util.NoSuchElementException;
@@ -80,4 +80,4 @@ public class ThreeStackDeque<Item> {
         System.out.println("Pop Left result: " + deque.popLeft()); // 期望输出 3
     }
 }
-{% endhighlight %}
+```
