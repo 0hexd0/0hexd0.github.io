@@ -41,6 +41,9 @@ kramdown:
   input: GFM
   parse_block_html: true
 
+# 设置构建目录为 docs
+destination: docs
+
 # 启用插件
 safe: false
 
