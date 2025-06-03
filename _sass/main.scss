@@ -13,3 +13,27 @@ figure.highlight {
     border: 1px solid #dee2e6;
   }
 }
+
+// table style, with inner border
+table {
+  border-collapse: collapse;
+  border: 1px solid #dee2e6;
+  border-collapse: collapse;
+
+  tbody, td, tfoot, th, thead, tr{
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f8f9fa;
+  }
+
+  th,td {
+    min-width: 4em;
+  }
+}
+
+
+
