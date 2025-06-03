@@ -33,10 +33,22 @@ paginate: 10
 
 # Build settings
 theme: minima
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+  input: GFM
+  parse_block_html: true
+
+# 启用插件
+safe: false
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
