@@ -1,12 +1,9 @@
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-mermaid.initialize({
-    startOnLoad: true,
-    theme: 'default',
-    securityLevel: 'loose',
-    flowchart: {
-        useMaxWidth: true,
-        htmlLabels: true
-    }
+<script type="module">
+document.addEventListener('DOMContentLoaded', async () => {
+  mermaid.initialize({ startOnLoad: false });
+  await mermaid.run({
+    querySelector: 'code.language-mermaid,pre.mermaid',
+  });
 });
 </script>
